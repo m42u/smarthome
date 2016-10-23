@@ -1,0 +1,25 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+	"username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+    "description": "Configuration file for my smart home",
+    "accessories": [
+        {
+            "accessory": "RCSwitch",
+            "name": "Salon",
+            "onCode": 4461875, 
+            "offCode": 4461884,
+            "pulseLength": 179
+        },
+        {
+            "accessory": "RCSwitch",
+            "name": "Salle a manger",
+            "onCode": 4463875,
+            "offCode": 4463884,
+            "pulseLength": 179
+        }
+    ]
+}
