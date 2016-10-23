@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  homebridge:
+    build: .
+    cap_add:
+      - SYS_RAWIO
+    devices:
+      - /dev/gpiomem
+    volumes:
+      - ./config.json:/root/.homebridge/config.json
